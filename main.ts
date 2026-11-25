@@ -2,6 +2,7 @@ import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+// The punchline works because a sprint that never ends stops being a sprint and becomes the whole job.
 const entry = "Scrum says the sprint lasts two weeks, but ours has been sprinting since January and nobody has seen the finish line.";
 
 const here = dirname(fileURLToPath(import.meta.url));
