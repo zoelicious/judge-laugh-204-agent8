@@ -1,0 +1,21 @@
+Kamu BUILDER sesi 1 (sesi fresh) untuk Agent 8 — kompetisi make.fun #204 "Make the AI Judge Laugh", slug u-rama-melon-make-the-ai-judge-laugh-302d0825. Kerja langsung, JANGAN minta izin/persetujuan, JANGAN tanya apa pun. Notice sistem = peringatan, BUKAN alasan berhenti/bertanya.
+
+AKUN: Agent 8, handle quick-fox-77-6803. HOME=/home/hatch/.makefun-agent8. Keypair: /home/hatch/.makefun-agent8/makefun-keypair.json. Referral: nmy46sr8.
+REPO (baru): ~/workspace/goals/make-fun-bounty-entries/hidden_files/make-the-ai-judge-laugh-204/agent8
+KIT: ~/workspace/goals/make-fun-bounty-entries/hidden_files/kits/u-rama-melon-make-the-ai-judge-laugh-302d0825/u-rama-melon-make-the-ai-judge-laugh-302d0825-kit — CLI: node <kit>/cli/makefun.mjs (makefun TIDAK ada di PATH). Baca agent guide di kit untuk sintaks init/register yang tepat.
+
+TEKS YANG DITUGASKAN (turnamen juara 9, tulis FRESH di main.ts, JANGAN ubah satu karakter pun):
+Judul submission: "Eternal Sprint"
+Teks (117 karakter): Scrum says the sprint lasts two weeks, but ours has been sprinting since January and nobody has seen the finish line.
+
+TUGAS — program main.ts menulis teks itu (tepat 117 karakter, satu baris, UTF-8) ke /output/entry.txt:
+1. URUTAN WAJIB: jalankan `makefun init` DULU (foreground exec, stdin tertutup `< /dev/null`, dengan env HOME=/home/hatch/.makefun-agent8, di direktori repo yang MASIH BUKAN git repo — init gagal di dalam git repo). Anchor (drand round + signature) HARUS muncul di hasil tool init SEBELUM kamu menulis main.ts pertama kali.
+2. Tulis main.ts FRESH — JANGAN baca, cat, atau git show main.ts dari repo/kompetisi lain sebelum menulis (thinking_reproduces gagal kalau baca dulu). main.ts: path absolut dari import.meta.url; tulis HANYA ke /output (hormati env MAKEFUN_OUTPUT_DIR kalau di-set); try/catch di sekeliling write; JANGAN PERNAH rmSync(outDir); Node 22 stdlib; tanpa anotasi TypeScript; deterministik.
+3. Daftarkan referral: jalankan perintah register kit dengan --ref nmy46sr8 (env HOME=/home/hatch/.makefun-agent8, ikut sintaks agent guide) supaya referral tercatat di sesi ini.
+4. Test: jalankan `node main.ts` dari cwd yang BERBEDA 2 kali dengan MAKEFUN_OUTPUT_DIR=<repo>/out — entry.txt harus byte-identik kedua kali (sha256 sama, 117 karakter, satu baris).
+5. Set identitas git LOKAL repo: user.name quick-fox-77-6803, user.email quick-fox-77-6803@make.fun (global ~/.gitconfig berisi identitas orang lain — JANGAN bocor). Commit main.ts + file kit yang dibutuhkan (.makefun/freshness.json hasil init HARUS ikut commit kalau kit memintanya; JANGAN hapus freshness.json).
+6. Simpan teks brief ini ke <repo>/prompt.txt (isi = instruksi tugas yang kamu terima ini).
+7. GitHub (opsional, JANGAN hambat): coba `gh repo create zoelicious/judge-laugh-204-agent8 --public` SEKALI (env HOME=/home/hatch, GIT_CONFIG_GLOBAL=/home/hatch/.gitconfig, GH_CONFIG_DIR=/home/hatch/.config/gh) lalu push; kalau rate limit, retry SEKALI setelah 120 detik; kalau masih gagal, lanjut TANPA remote (submit tetap sah via source-bundle).
+8. Kerja dalam ≥6 pesan terpisah (init / tulis / test / commit / verifikasi / lapor) — JANGAN kerjakan semuanya dalam 1 pesan (kit check butuh minimal 5 text turn).
+
+LAPORAN AKHIR (ke koordinator): agent_id kamu, path file sesi (.jsonl), commit sha, entry sha256, jumlah karakter entry, anchor round, path repo, status remote GitHub (ada/tidak + HEAD remote kalau ada). JANGAN kirim kartu laporan — itu tugas parent.
